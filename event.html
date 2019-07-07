@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        <title>Events-Timeline</title>
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>      
+<body id="main">
+
+<!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="#"><img src="./images/html-5-logo.png" width="40px" height="40px"></a>
+    <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Events<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Event-Sponsors</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Event-Organizers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Contacts</a>
+            <a class="dropdown-item" href="#">Email</a>
+            
+        </li>
+      </ul>
+    </div>
+    <button class="evento btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="material-icons addsign">add</i><span class="hide">ADD NEW EVENT</span></button>
+  </nav>
+<!--Navbar-->
+
+
+<!-- Modal for event details-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Add New Event</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div><input id="name" type="text" placeholder="Event Name"></div><hr>
+            <div><input id="type" type="text" placeholder="Event Type"></div><hr>
+            <div><textarea id="des" placeholder="Event Description" width="100%" cols="30" rows="3"></textarea></div><hr>
+            <div><input id="rurl" type="text" placeholder="Rulebook URL"></div><br><hr>
+            <b>Categories: </b><br>
+              <div><input id= "cat" type="text" placeholder="New Category"></div><hr><br>
+            <div><b>Days: </b><br>
+              <div class="row day-details">
+              <button class="multiple col-2 col-sm-1"><i class=" add1 text-center material-icons">add</i></button>
+              <input id="day" class="col-sm-2" type="text" placeholder="Day">
+              <input id="sess" class="col-sm-3" type="text" placeholder="Session">
+              <input id="time" class="col-sm-4" type="time">
+              <input id="venue" class="col-sm-2" type="text" placeholder="Venue">
+              </div>
+            </div><hr>
+            <div class="row">
+              <div class="col-sm-4 align-self-center">
+                <button id="#imge" onclick="imageBrowser()" type="button" class=" btn btn-primary">SELECT IMAGE</button>
+              </div>
+                <div class="col-sm-4 ">
+                  <img id="selector" src="./images/clouds-cloudy-conifers-247478.jpg" width="100%" height="100%" >
+                </div>
+                <div class="col-sm-4 align-self-center">
+                  <button id="#addevent" type="button" onclick="addevent()" class="btn btn-success" >SAVE EVENT</button>
+                </div>
+
+                
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+<!--modal-->
+
+     
+    <div class="container">
+<!--row to display cards-->
+      <div id="tempo" class="row">
+                
+      </div>
+    </div>
+
+      
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* home page body */
+#main{
+background-color: antiquewhite;
+}
+/* login-page body */
+#login-page{
+    background: #F1F2B5;
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5);
+    background: linear-gradient(to right, #135058, #F1F2B5); 
+    
+}
+.r1{
+    margin-top:10px;
+    
+}
+.division{
+    margin-bottom: 20px;
+}
+#edit{
+    margin-bottom:10px;
+}
+#delete{
+    margin-bottom:10px;
+}
+.container{
+    margin-top:20px;
+}
+.btn{
+font-size:12px;
+}
+.clear{
+    color:red;
+    cursor:pointer;
+}
+.add1{
+    font-size:25px;
+
+}
+.url{
+    background-color:orange;
+    padding:0px 5px;
+}
+.rulebook{
+    word-break: break-all;
+}
+.col-1{
+   float: right;
+}
+.details-cont{
+    margin-bottom: 5px;
+}
+.row{
+    padding:0px 10px;
+}
+.col-md-4{
+    margin-bottom:40px;
+}
+.hr{
+    border-color:darkgray;
+}
+
+.modal-body input,.modal-body textarea{
+    border:none;
+    border-width:0px;
+    outline:none;
+    width:100%;
+}
+.modal-body hr{
+    margin-top:0px;
+}
+.imgr{
+    height:300px;
+    width:100%;
+}
+.card{
+    box-shadow: 10px 10px 5px grey;
+}
+.card-title{
+    color:purple;
+}
+.card-heading{
+    color:darkblue;
+}
+.cont-login{
+    margin-top:80px;
+    border-radius:15px;
+    height:70vh;
+    width:30%;
+    background: #C33764;  
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+
+}
+.hh h2{
+    color:white;
+    font-size:35px;
+}
+.details{
+    margin:60px 5px 40px; 
+}
+.details hr{
+    border-top: 1px ridge white;
+    margin-top:0px;
+}
+.element{
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    color:white;
+    background: transparent;
+    border-top: transparent ;
+    border-left: transparent ;
+    border-right: transparent ;
+}
+div.element input{
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    background: transparent;
+    border-top: transparent ;
+    border-left: transparent ;
+    border-right: transparent ;
+    
+}
+.login-button{
+    outline: none;
+    background-color: white;
+    color:black;
+    padding:0px 10px;
+    font-size: 17px;
+    border:none;
+}
+.element input::placeholder{
+    color:white;
+}
+.element input{
+    outline:none;
+    border:0;
+    color:white;
+    padding:5px 5px;
+}
+label{
+    color: white;
+}
+input[type="checkbox"]{
+    margin-right:10px;
+}
+.material-icons{
+    vertical-align: middle;
+    margin-right:5px;
+}
+.alert{
+    margin-bottom:0px;
+    color:red;
+    margin-right:0px;
+    display:none;
+    outline:none;
+    border:none;
+}
+.alert:hover{
+    cursor: pointer;
+}
+.addsign{
+    display:none;
+    font-size:36px;
+}
+.evento{
+    margin-top:5px;
+}
+.forgot a{
+    float:right;
+    color:white;
+}
+.box{
+    background-color:yellow;
+    display:none;
+    cursor: none;
+    pointer-events:none;
+}
+.box1{
+    background-color:yellow;
+    display:none;
+    pointer-events: none;
+}
+nav{
+    background-color:rgb(32, 109, 77);
+}
+/* Login page media Queries */
+@media (min-width:100px) and (max-width:767px){
+    .cont-login{
+        margin-top:60px;
+        height:80vh;
+        width:70%;
+    }
+    .details{
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+    .material-icons{
+        margin-right:0px;
+        float:left;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .cont-login{
+        height: 85vh;
+        width:50%;
+    }
+}
+
+
+/* Home Page Media Queries */
+ @media (max-width:768px){
+        #selector{
+            margin-left:27%;
+            width:50%;
+            height:100%;
+        }
+        .align-self-center{
+            text-align:center;
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+    .evento{
+        float:right;
+        border-radius:50%;
+        text-align:center;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-image: url("../../images/icons8-plus-48.png");
+    }
+    .hide{
+        display:none;
+    }
+    .addsign{
+        display:inline;
+    }
+} 
